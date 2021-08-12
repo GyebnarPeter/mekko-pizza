@@ -1,0 +1,60 @@
+@media screen and (min-width: 1024px) {
+
+    .header {
+        &__contact-bar {
+            display: flex;
+        }
+
+        &__mobile {
+            display: none;
+        }
+    }
+
+    .nav {
+        width: 100%;
+        height: initial;
+        position: initial;
+        background: unset;
+        padding: unset;
+        transition: .5s;
+    
+        &__close-btn {
+            display: none;
+        }
+
+        &__links {
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+        }
+    
+        &__item {
+            padding: unset;
+            border-bottom: unset;
+    
+            a {
+                color: white;
+                margin: 0 15px;
+                transition: .3s;
+
+                &:hover {
+                    color: modules.$darkbrown;
+                }
+            }
+        }
+    
+        &__logo {
+            display: block;
+
+            img {
+                width: 200px;
+                margin: 0 30px;
+            }
+        }
+
+        i {
+            display: none;
+        }
+    }
+
+}
