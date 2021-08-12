@@ -1,0 +1,107 @@
+@use "modules/modules";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../../images/bg.jpg) repeat;
+    height: 2000px;
+}
+
+.header {
+    &__contact-bar {
+        width: 100%;
+        background: modules.$lightblack;
+        color: modules.$lightbrown;
+        font-family: 'Oswald', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+
+    &__mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        /* background: modules.$lightblack;
+        position: fixed;
+        top: 0;
+        left: 0; */
+        
+        &__logo img {
+            width: 150px;
+        }
+
+        &__nav-open-btn {
+            width: 30px;
+            height: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: fixed;
+            top: 36px;
+            right: 30px;
+
+            span {
+                width: 100%;
+                height: 2px;
+                background: white;
+            }
+        }
+    }
+}
+
+.nav {
+    width: 75%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -75%;
+    background: white;
+    padding: 30px;
+    transition: .5s;
+
+    &__close-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+    }
+
+    &__links {
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        padding: 10px 0;
+        border-bottom: 1px dotted modules.$darkbrown;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__logo {
+        display: none;
+    }
+}
+
+@import 'media/media-query-768';
