@@ -1,65 +1,76 @@
 @media screen and (min-width: 1024px) {
 
-    .header {
-        &__contact-bar {
-            display: flex;
-        }
-
-        &__mobile {
-            display: none;
-        }
+.header {
+    &__contact-bar {
+        display: flex;
     }
 
-    .nav {
-        width: 100%;
-        height: initial;
-        position: initial;
-        background: unset;
-        transition: .8s;
-
-        &__links {
-            display: flex;
-            justify-content: center;
-        }
-    
-        &__item {
-            padding: unset;
-            border-bottom: unset;
-    
-            a {
-                color: white;
-                margin: 0 15px;
-                transition: .3s;
-
-                &:hover {
-                    color: modules.$darkbrown;
-                }
-            }
-        }
-    
-        &__logo {
-            display: block;
-
-            img {
-                width: 200px;
-                margin: 0 30px;
-            }
-        }
-
-        i {
-            display: none;
-        }
-    }
-
-    .nav-close-btn {
+    &__mobile {
         display: none;
     }
+}
 
-    .nav-scroll-position {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: modules.$lightblack;
+.nav {
+    width: 100%;
+    height: initial;
+    position: initial;
+    background: unset;
+    transition: .8s;
+
+    &__links {
+        display: flex;
+        justify-content: center;
     }
+
+    &__item {
+        padding: unset;
+        border-bottom: unset;
+
+        a {
+            color: white;
+            margin: 0 15px;
+            transition: .3s;
+
+            &:hover {
+                color: modules.$darkbrown;
+            }
+        }
+    }
+
+    &__logo {
+        display: block;
+
+        img {
+            width: 200px;
+            margin: 0 30px;
+        }
+    }
+
+    i {
+        display: none;
+    }
+}
+
+.nav-close-btn {
+    display: none;
+}
+
+/* .nav-scroll-position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: modules.$lightblack;
+} */
+
+.footer {
+    &__nav {
+        display: flex;
+
+        a {
+            width: initial;
+            margin: 0 15px;
+        }
+    }
+}
 
 }

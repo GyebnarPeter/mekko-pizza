@@ -3,7 +3,9 @@ $('header').load('../includes/header.html', () => {
     $('.nav-close-btn').click( () => $('nav').css('right', '-75%') );
 });
 
-$(document).ready( () => {
+$('footer').load('../includes/footer.html');
+
+/* $(document).ready( () => {
     let nav = document.querySelector('nav');
 
     window.onscroll = () => {
@@ -13,4 +15,4 @@ $(document).ready( () => {
             nav.classList.add('nav-scroll-position');
         }
     }
-});
+}); */
