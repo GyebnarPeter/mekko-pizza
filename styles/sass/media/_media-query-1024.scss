@@ -15,17 +15,11 @@
         height: initial;
         position: initial;
         background: unset;
-        padding: unset;
-        transition: .5s;
-    
-        &__close-btn {
-            display: none;
-        }
+        transition: .8s;
 
         &__links {
             display: flex;
             justify-content: center;
-            padding: 50px 0;
         }
     
         &__item {
@@ -55,6 +49,17 @@
         i {
             display: none;
         }
+    }
+
+    .nav-close-btn {
+        display: none;
+    }
+
+    .nav-scroll-position {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: modules.$lightblack;
     }
 
 }
